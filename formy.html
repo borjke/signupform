@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formie.css">
+    <script src="formied.js" defer></script>
+    <title>A Simple Sign up form</title>
+</head>
+<body>
+    <div class="left">
+
+    </div>
+    <div class="center">
+        <div class="leftSide">
+            <img class="stuf" src="photo-1585202900225-6d3ac20a6962.avif">
+            <div class="bar">
+                <img class="logo" src="odin-lined.png">
+                <div class="logotxt">
+                    ODIN
+                </div>
+            </div>
+        </div>
+        
+        <div class="rightSide">
+            <div class="top">
+                <div class="textbox">
+                    Not a real online service but you can technically
+                    sign up, just sign up or not, you know you want to
+                    but technically you dont have to. 
+                    <br></br>
+                    Just sign up now
+                    to get started.
+                </div>
+            </div>
+            <div class="forminfo">
+                <div class="formbox">
+                    Let's do this
+                    <div class="forms">
+                        <form class="formy" id="my-form"action="/my-handling-form-page" method="post">
+                            <div class='formboxy'>
+                                <label for='first-name'>First Name</label>
+                                <input id='first-name' autocomplete="off" name='first-name' type='text' required/>
+                            </div>
+
+                            <div class='formboxy'>
+                                <label for='last-name'>Last Name</label>
+                                <input id='last-name' autocomplete="off" name='last-name' type='text' required/>
+                            </div>
+                            
+                            <div class='formboxy'>
+                                <label for='email'>Email</label>
+                                <input id='email' autocomplete="off" name='email' type='email' required/>
+                            </div>
+
+                            <div class='formboxy'>
+                                <label for='phone'>Phone Number</label>
+                                <input id='phone' autocomplete="off" name='phone' type='tel' pattern="[1-9]{1}[0-9]{9}" title="Please enter a valid phone number" required/>
+                            </div>
+
+                            <div class='formboxy'>
+                                <label for='password'>Password</label>
+                                <input id='password' minlength="6" name='password' type='password' required/>
+                                <div class="passReq">*A password of at least 6 characters is required</div>
+                            </div>
+
+                            <div class='formboxy'>
+                                <label for='cpassword'>Confirm Password</label>
+                                <input id='cpassword' minlength="6" name='cpassword' type='password' required/>
+                                <div class="cpassReq">The password does not match</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="submit" form="my-form">Create Account</button>
+                <div class="alread">
+                    Already Have an Account?
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="right">
+
+    </div>
+</body>
+</html>

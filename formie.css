@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url("Norse-Bold.otf");
+}
+
+
+body {
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+.left, .right {
+    background-color: #282828;
+    flex: 1;
+}
+
+.center {
+    display: flex;
+    flex: 1;
+    flex-grow: 4;
+}
+
+.leftSide {
+    flex: 1;
+    flex-grow: 0.5;
+    display: flex;
+    overflow: hidden;
+}
+
+.bar {
+    margin-top: 200px;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    width: 348px;
+    height: 100px;
+    background-color: rgba(21, 18, 18, 0.5);
+    color: white;
+    padding: 10px;
+    gap: 10px;
+}
+
+.logo {
+    width: 75px;
+    height: auto;
+}
+
+.logotxt {
+    font-size: 50px;
+    font-family: "norsebold";
+}
+
+.rightSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.stuf {
+    height: auto;
+}
+
+.top {
+    flex: 1;
+    background-color: rgb(245, 245, 245);
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+}
+
+.textbox {
+    margin-top: 175px;
+    height: 70px;
+    width: 75%;
+}
+
+.forminfo {
+    flex: 1;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 2px 0 #ccc;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.formbox {
+    font-size: larger;
+    width: 75%;
+    height: 80%;
+    padding: 10px;
+}
+
+.forms {
+    padding: 10px 0px;
+}
+
+.formy {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formboxy {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: rgb(50, 50, 50);
+    width: 45%;
+}
+
+.formboxy input {
+    width: 175px;
+    background-color: #F6F7F8;
+    border: 1px solid #D6D9DC;
+}
+
+.formboxy input[type=password]:invalid {
+    border-color: red;
+}
+
+.passReq, .cpassReq {
+    color: red;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.formboxy input:valid {
+    border-color: #0686c6;
+}
+
+.footer {
+    flex: 1;
+    background-color: rgb(245, 245, 245);
+}
+
+.footer button {
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #FFFFFF;
+    background-color: #345503;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+}
+
+.alread {
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
